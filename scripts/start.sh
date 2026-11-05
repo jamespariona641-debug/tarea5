@@ -1,4 +1,4 @@
-﻿#!/bin/bash
+#!/bin/bash
 set -e
 
 cat > /etc/systemd/system/mercadoandino.service <<'EOF'

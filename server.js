@@ -27,7 +27,7 @@ app.get("/", (req, res) => {
             <h1>MercadoAndino</h1>
             <h2>Plataforma web desplegada en AWS</h2>
             <p>Implementación automatizada con CodeDeploy.</p>
-            <p>Versión: v1</p>
+            <p>Versión: v2</p>
             <p>Estado: Aplicación funcionando correctamente.</p>
         </body>
         </html>
@@ -38,7 +38,7 @@ app.get("/health", (req, res) => {
     res.status(200).json({
         status: "healthy",
         application: "MercadoAndino",
-        version: "v1"
+        version: "v2"
     });
 });
 
@@ -85,3 +85,4 @@ app.get("/presigned-url", async (req, res) => {
 app.listen(PORT, "0.0.0.0", () => {
     console.log(`MercadoAndino funcionando en el puerto ${PORT}`);
 });
+
